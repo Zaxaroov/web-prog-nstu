@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(93, 180, 238);
+    color: black;
+    font-family: Arial;
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(238, 6, 107, 0.625);
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+footer {
+    background-color: rgb(238, 6, 107, 0.625);
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+main {
+    background-color: rgb(76, 152, 202);
+    color:rgba(1, 1, 1, 0.89);
+    font-family: Arial;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    transition: 5s 1s;
+}
+
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+a:active {
+    color: black;
+    opacity: 0.3;
+}
+
