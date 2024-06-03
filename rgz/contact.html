@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НКЦ | НКЦ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="website.html"><img src="logo.jpg" alt="" width="20%"></a>
+        </section>
+        <section class="href">
+            <a href="https://www.nationalclearingcentre.ru/catalog/02080304"> Зачисление денежных средств</a>
+            <a href="https://ct.moex.com/cl/">Клиринговый терминал</a>
+            <a href="https://www.moex.com/">Московская биржа</a>
+            <a href="https://www.nsd.ru/">НРД</a>
+            <a href="https://www.nationalclearingcentre.ru/sitemap">Карта сайта</a>
+        </section>
+    </header>
+    <div class="bar"></div>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <div class="menu" id="dropdownMenu">
+        <a href="video.html">Видео</a>
+        <a href="news.html">Новости</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Контактная информация</a>
+    </div>
+
+    <div class="contact">
+        <h1>Контактная информация</h1>
+        <p>Наша почта: info-nkcbank@moex.com</p>
+        <p>Наш телефон: +7 (495) 363-32-32</p>
+        <p>Наш адрес в Новосибирске: ул. Зыряновская, д. 61, кв. 35</p>
+    </div>
+
+    <div class="map">
+        <h1>Мы на карте</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.9037849873603!2d82.93832003427144!3d55.009851595619004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe66d7c7bda59%3A0xc9117f271206c1fe!2z0YPQuy4g0JfRi9GA0Y_QvdC-0LLRgdC60LDRjywgNjEsINCd0L7QstC-0YHQuNCx0LjRgNGB0LosINCd0L7QstC-0YHQuNCx0LjRgNGB0LrQsNGPINC-0LHQuy4sIDYzMDEwMg!5e0!3m2!1sru!2sru!4v1716902781717!5m2!1sru!2sru"
+         width="990" height="450" style="border: 1px solid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script>
+        function toggleMenu() {
+        var menuIcon = document.querySelector('.burger');
+        var dropdown = document.getElementById('dropdownMenu');
+        menuIcon.classList.toggle('menu-open');
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+        }
+        }
+      </script>
+
+    <footer>
+        &copy; Национальный клиринговый центр, все права защищены, 2024
+    </footer> 
+      
+</body>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НКЦ | НКЦ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="website.html"><img src="logo.jpg" alt="" width="20%"></a>
+        </section>
+        <section class="href">
+            <a href="https://www.nationalclearingcentre.ru/catalog/02080304"> Зачисление денежных средств</a>
+            <a href="https://ct.moex.com/cl/">Клиринговый терминал</a>
+            <a href="https://www.moex.com/">Московская биржа</a>
+            <a href="https://www.nsd.ru/">НРД</a>
+            <a href="https://www.nationalclearingcentre.ru/sitemap">Карта сайта</a>
+        </section>
+    </header>
+    <div class="bar"></div>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <div class="menu" id="dropdownMenu">
+        <a href="video.html">Видео</a>
+        <a href="news.html">Новости</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Контактная информация</a>
+    </div>
+    <h1 class="video-name">15 лет клиринговому центу!</h1>
+    <div>
+        <iframe class="video" width="1200" height="700" src="https://www.youtube.com/embed/of7kW_k-F8U?si=XZ6H7_ua4XUB9EMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <section>
+        <img id="heartImage" class="heart" src="heart0.png" alt="Пустое сердце">
+    </section>
+    <section class="comment-block">
+        <div class="comment"><b>Андрей</b> : Классное видео, снято качественно и без лишнего</div>
+        <div class="comment"><b>Саша</b> : Спасибо, как раз искал информацию про клиринговые центры!</div>
+        <div class="comment"><b>Маша</b> : Жду новое видео!</div>
+    </section>
+    <script>
+        function toggleMenu() {
+        var menuIcon = document.querySelector('.burger');
+        var dropdown = document.getElementById('dropdownMenu');
+        menuIcon.classList.toggle('menu-open');
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+        }
+    }
+
+    
+        document.addEventListener("DOMContentLoaded", function() {
+        var heartImage = document.getElementById("heartImage");
+
+        heartImage.addEventListener("click", function() {
+            if (heartImage.src.includes("heart0.png")) {
+                heartImage.src = "heart1.png";
+            } else {
+                heartImage.src = "heart0.png";
+            }
+        });
+    });
+
+    </script>
+    <footer>
+        &copy; Национальный клиринговый центр, все права защищены, 2024
+    </footer> 
+</body>
+</html>
